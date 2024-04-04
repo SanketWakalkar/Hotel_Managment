@@ -66,6 +66,7 @@ def do_Update_emp(request,emp_id):
         e.Phone=emp_Phone
         e.address=emp_Address
         e.department=emp_department
+        print(emp_Working)
         if emp_Working is None:
             e.working=False
         else:

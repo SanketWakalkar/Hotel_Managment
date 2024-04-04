@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Hotel Managment</a>
+      <a class="navbar-brand" href="/emp/home">Hotel Managment</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -12,20 +12,14 @@
           <li class="nav-item">
             <a class="nav-link" href="/emp/add-emp/">Add Employee</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              More
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">View Employee</a></li>
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Follow</a></li>
-            </ul>
-          </li>
-          
         </ul>
-        
+
       </div>
     </div>
+    {% if user.is_authenticated %}
+    <div  class="collapse navbar-collapse">
+<a  class="nav-item" href="{% url 'account_logout' %}">SignOut</a></li>
+
+    </div>
+    {% endif %}
   </nav>
