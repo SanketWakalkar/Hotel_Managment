@@ -23,3 +23,8 @@ secret_key.py
 
 # Ignore Django migration files
 **/migrations/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-ti(30%+9&y3kvriu$59gbyha+(lget*7*+vcy5wd8rcbr)y^cs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = ['https://x23159391-hotel-mgmt-env.eba-c7szcg3r.eu-west-1.elasticbeanstalk.com','https://d69d8f4304084530bea851b48c6eb21a.vfs.cloud9.eu-west-1.amazonaws.com']
+ALLOWED_HOSTS = ['x23159391-hotel-mgmt-env.eba-c7szcg3r.eu-west-1.elasticbeanstalk.com','d69d8f4304084530bea851b48c6eb21a.vfs.cloud9.eu-west-1.amazonaws.com']
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
