@@ -30,28 +30,28 @@
                            
                             <div class="mb-3">
                                 <lable for="ID">Employee Name</lable>
-                                <input id="ID" type="text" class="form-control" placeholder="Enter Emp Name"
+                                <input id="ID" type="text" required class="form-control" placeholder="Enter Emp Name"
                                 name="emp_name"
                                 >
                             </div>
                             
                             <div class="mb-3">
                                 <lable for="Phone">Employee id</lable>
-                                <input id="Phone" type="text" class="form-control" placeholder="Enter Emp ID"
+                                <input id="Phone" type="number" required  class="form-control" placeholder="Enter Emp ID"
                                 name="emp_id"
                                 >
                             </div>
 
                             <div class="mb-3">
                                 <lable for="Name">Phone</lable>
-                                <input id="Name" type="text" class="form-control" placeholder="Enter Emp Phone"
+                                <input id="Name" type="number" required  class="form-control" placeholder="Enter Emp Phone"
                                 name="emp_Phone"
                                 >
                             </div>
 
                             <div class="mb-3">
                                 <lable for="Address">Employee Address</lable>
-                                <textarea name="emp_Address" id="Address" rows="5" class="form-control"></textarea>
+                                <textarea name="emp_Address" required id="Address" rows="5" class="form-control"></textarea>
                             </div>
 
                             <div class="mb-3 form-check">
@@ -61,7 +61,7 @@
 
                             <div class="mb-3">
                                 <lable for="department">Departments</lable>
-                                <select name="emp_department" id="department" class="form-control">
+                                <select name="emp_department" id="department" required class="form-control">
                                     <option value="Front Office">Front office</option>
                                     <option value="HouseKeeping">HouseKeeping</option>
                                     <option value="Kitchen">Kitchen</option>
@@ -72,7 +72,7 @@
                                 </select>
                             </div>
                             <div class="container text-center">
-                                <button class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary">
                                     Add Employee
                                 </button>
                             </div>
