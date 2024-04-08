@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ti(30%+9&y3kvriu$59gbyha+(lget*7*+vcy5wd8rcbr)y^cs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://x23159391-hotel-mgmt-env.eba-c7szcg3r.eu-west-1.elasticbeanstalk.com','https://d69d8f4304084530bea851b48c6eb21a.vfs.cloud9.eu-west-1.amazonaws.com']
+CSRF_TRUSTED_ORIGINS = ['x23159391-hotel-mgmt-env.eba-c7szcg3r.eu-west-1.elasticbeanstalk.com','https://d69d8f4304084530bea851b48c6eb21a.vfs.cloud9.eu-west-1.amazonaws.com']
 ALLOWED_HOSTS = ['x23159391-hotel-mgmt-env.eba-c7szcg3r.eu-west-1.elasticbeanstalk.com','d69d8f4304084530bea851b48c6eb21a.vfs.cloud9.eu-west-1.amazonaws.com']
 
 AUTHENTICATION_BACKENDS = [
@@ -133,7 +133,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Default primary
+# Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
